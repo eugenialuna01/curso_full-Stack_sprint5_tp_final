@@ -1,0 +1,66 @@
+
+<body>
+  <h1>Editar País</h1>
+
+  <form class="add" action="/api/paises/<%= pais._id %>?_method=PUT" method="POST">
+
+    <!-- NOMBRE OFICIAL -->
+    <label for="name">Nombre Oficial "El nombre oficial debe tener entre 3 y 90 caracteres":</label>
+    <input type="text" id="nombre" name="name[official]" value="<%= pais.name.official || 'Sin nombre' %>">
+
+    <br><br>
+
+    <!-- CAPITAL -->
+    <label for="capital">Capital (si hay más de una, separadas por coma):</label>
+    <input type="text" id="capital" name="capital" 
+           value="<%= pais.capital ? pais.capital.join(', ') : '' %>">
+    <br><br>
+
+    <!-- FRONTERAS -->
+    <label for="borders">Fronteras (códigos de 3 letras, separados por coma):</label>
+    <input type="text" id="borders" name="borders" 
+           value="<%= pais.borders ? pais.borders.join(', ') : '' %>">
+    <br><br>
+
+    <!-- ÁREA -->
+    <label for="area">Área (km²):</label>
+    <input type="number" id="area" name="area" step="0.01"  value="<%= pais.area %>">
+    <br><br>
+
+        <!-- POBLACIÓN -->
+    <label for="population">Población:</label>
+    <input type="number" id="population" name="population" step="0.000.000.000.000" value="<%= pais.population %>">
+    <br><br>
+
+    <!-- GINI -->
+    <label for="gini">Índice de Gini (0-100):</label>
+    <input type="number" id="gini" name="gini" step="0.01" value="<%= pais.gini ? pais.gini : '' %>" >
+    <br><br>
+
+   <!-- Zona Horaria -->
+    <label for="timezones">Zona Horaria:</label>
+    <select id="timezones" name="timezones[]" multiple size="8">
+      <option value="UTC-08:00" <%= pais.timezones && pais.timezones.includes("UTC-08:00") ? "selected" : "" %>>UTC-08:00</option>
+      <option value="UTC-07:00" <%= pais.timezones && pais.timezones.includes("UTC-07:00") ? "selected" : "" %>>UTC-07:00</option>
+      <option value="UTC-06:00" <%= pais.timezones && pais.timezones.includes("UTC-06:00") ? "selected" : "" %>>UTC-06:00</option>
+      <option value="UTC-05:00" <%= pais.timezones && pais.timezones.includes("UTC-05:00") ? "selected" : "" %>>UTC-05:00</option>
+      <option value="UTC-04:30" <%= pais.timezones && pais.timezones.includes("UTC-04:30") ? "selected" : "" %>>UTC-04:30</option>
+      <option value="UTC-04:00" <%= pais.timezones && pais.timezones.includes("UTC-04:00") ? "selected" : "" %>>UTC-04:00</option>
+      <option value="UTC-03:30" <%= pais.timezones && pais.timezones.includes("UTC-03:30") ? "selected" : "" %>>UTC-03:30</option>
+      <option value="UTC-03:00" <%= pais.timezones && pais.timezones.includes("UTC-03:00") ? "selected" : "" %>>UTC-03:00</option>
+      <option value="UTC-02:00" <%= pais.timezones && pais.timezones.includes("UTC-02:00") ? "selected" : "" %>>UTC-02:00</option>
+    </select>
+    <br><br>
+
+
+
+    <!-- Campo visible pero no editable -->
+    <label for="creador">Creador:</label>
+    <input type="text" id="creador" name="creador" value="Eugenia Luna" readonly>
+    <br><br>
+
+    <!-- BOTÓN DE GUARDAR -->
+    <button type="submit">Actualizar País</button>
+  </form>
+  
+</body>

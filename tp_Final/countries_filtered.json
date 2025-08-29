@@ -1,0 +1,398 @@
+[
+  {
+    "name": {
+      "official": "República Bolivariana de Venezuela"
+    },
+    "capital": [
+      "Caracas"
+    ],
+    "borders": [
+      "BRA",
+      "COL",
+      "GUY"
+    ],
+    "area": 916445,
+    "population": 28435943,
+    "gini": 44.8,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "creador": "Eugenia Luna"
+  },
+  {
+    "name": {
+      "official": "República del Ecuador"
+    },
+    "capital": [
+      "Quito"
+    ],
+    "borders": [
+      "COL",
+      "PER"
+    ],
+    "area": 276841,
+    "population": 17643060,
+    "gini": 45.7,
+    "timezones": [
+      "UTC-06:00",
+      "UTC-05:00"
+    ],
+    "creador": "Eugenia Luna"
+  },
+  {
+    "name": {
+      "official": "Asociado de Puerto Rico"
+    },
+    "capital": [
+      "San Juan"
+    ],
+    "borders": [],
+    "area": 8870,
+    "population": 3194034,
+    "gini": null,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "creador": "Eugenia Luna"
+  },
+  {
+    "name": {
+      "official": "República de Chile"
+    },
+    "capital": [
+      "Santiago"
+    ],
+    "borders": [
+      "ARG",
+      "BOL",
+      "PER"
+    ],
+    "area": 756102,
+    "population": 19116209,
+    "gini": 44.4,
+    "timezones": [
+      "UTC-06:00",
+      "UTC-04:00"
+    ],
+    "creador": "Eugenia Luna"
+  },
+  {
+    "name": {
+      "official": "República de Costa Rica"
+    },
+    "capital": [
+      "San José"
+    ],
+    "borders": [
+      "NIC",
+      "PAN"
+    ],
+    "area": 51100,
+    "population": 5094114,
+    "gini": 48.2,
+    "timezones": [
+      "UTC-06:00"
+    ],
+    "creador": "Eugenia Luna"
+  },
+  {
+    "name": {
+      "official": "República Dominicana"
+    },
+    "capital": [
+      "Santo Domingo"
+    ],
+    "borders": [
+      "HTI"
+    ],
+    "area": 48671,
+    "population": 10847904,
+    "gini": 41.9,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "creador": "Eugenia Luna"
+  },
+  {
+    "name": {
+      "official": "República de Paraguay"
+    },
+    "capital": [
+      "Asunción"
+    ],
+    "borders": [
+      "ARG",
+      "BOL",
+      "BRA"
+    ],
+    "area": 406752,
+    "population": 7132530,
+    "gini": 45.7,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "creador": "Eugenia Luna"
+  },
+  {
+    "name": {
+      "official": "República de El Salvador"
+    },
+    "capital": [
+      "San Salvador"
+    ],
+    "borders": [
+      "GTM",
+      "HND"
+    ],
+    "area": 21041,
+    "population": 6486201,
+    "gini": 38.8,
+    "timezones": [
+      "UTC-06:00"
+    ],
+    "creador": "Eugenia Luna"
+  },
+  {
+    "name": {
+      "official": "República de Honduras"
+    },
+    "capital": [
+      "Tegucigalpa"
+    ],
+    "borders": [
+      "GTM",
+      "SLV",
+      "NIC"
+    ],
+    "area": 112492,
+    "population": 9904608,
+    "gini": 48.2,
+    "timezones": [
+      "UTC-06:00"
+    ],
+    "creador": "Eugenia Luna"
+  },
+  {
+    "name": {
+      "official": "República de Nicaragua"
+    },
+    "capital": [
+      "Managua"
+    ],
+    "borders": [
+      "CRI",
+      "HND"
+    ],
+    "area": 130373,
+    "population": 6624554,
+    "gini": 46.2,
+    "timezones": [
+      "UTC-06:00"
+    ],
+    "creador": "Eugenia Luna"
+  },
+  {
+    "name": {
+      "official": "República Oriental del Uruguay"
+    },
+    "capital": [
+      "Montevideo"
+    ],
+    "borders": [
+      "ARG",
+      "BRA"
+    ],
+    "area": 181034,
+    "population": 3473727,
+    "gini": 39.7,
+    "timezones": [
+      "UTC-03:00"
+    ],
+    "creador": "Eugenia Luna"
+  },
+  {
+    "name": {
+      "official": "Belice"
+    },
+    "capital": [
+      "Belmopan"
+    ],
+    "borders": [
+      "GTM",
+      "MEX"
+    ],
+    "area": 22966,
+    "population": 397621,
+    "gini": 53.3,
+    "timezones": [
+      "UTC-06:00"
+    ],
+    "creador": "Eugenia Luna"
+  },
+  {
+    "name": {
+      "official": "Estado Plurinacional de Bolivia"
+    },
+    "capital": [
+      "Sucre"
+    ],
+    "borders": [
+      "ARG",
+      "BRA",
+      "CHL",
+      "PRY",
+      "PER"
+    ],
+    "area": 1098581,
+    "population": 11673029,
+    "gini": 41.6,
+    "timezones": [
+      "UTC-04:00"
+    ],
+    "creador": "Eugenia Luna"
+  },
+  {
+    "name": {
+      "official": "República de Perú"
+    },
+    "capital": [
+      "Lima"
+    ],
+    "borders": [
+      "BOL",
+      "BRA",
+      "CHL",
+      "COL",
+      "ECU"
+    ],
+    "area": 1285216,
+    "population": 32971846,
+    "gini": 41.5,
+    "timezones": [
+      "UTC-05:00"
+    ],
+    "creador": "Eugenia Luna"
+  },
+  {
+    "name": {
+      "official": "República de Cuba"
+    },
+    "capital": [
+      "Havana"
+    ],
+    "borders": [],
+    "area": 109884,
+    "population": 11326616,
+    "gini": null,
+    "timezones": [
+      "UTC-05:00"
+    ],
+    "creador": "Eugenia Luna"
+  },
+  {
+    "name": {
+      "official": "República Argentina"
+    },
+    "capital": [
+      "Buenos Aires"
+    ],
+    "borders": [
+      "BOL",
+      "BRA",
+      "CHL",
+      "PRY",
+      "URY"
+    ],
+    "area": 2780400,
+    "population": 45376763,
+    "gini": 42.9,
+    "timezones": [
+      "UTC-03:00"
+    ],
+    "creador": "Eugenia Luna"
+  },
+  {
+    "name": {
+      "official": "República de Colombia"
+    },
+    "capital": [
+      "Bogotá"
+    ],
+    "borders": [
+      "BRA",
+      "ECU",
+      "PAN",
+      "PER",
+      "VEN"
+    ],
+    "area": 1141748,
+    "population": 50882884,
+    "gini": 51.3,
+    "timezones": [
+      "UTC-05:00"
+    ],
+    "creador": "Eugenia Luna"
+  },
+  {
+    "name": {
+      "official": "Estados Unidos Mexicanos"
+    },
+    "capital": [
+      "Mexico City"
+    ],
+    "borders": [
+      "BLZ",
+      "GTM",
+      "USA"
+    ],
+    "area": 1964375,
+    "population": 128932753,
+    "gini": 45.4,
+    "timezones": [
+      "UTC-08:00",
+      "UTC-07:00",
+      "UTC-06:00"
+    ],
+    "creador": "Eugenia Luna"
+  },
+  {
+    "name": {
+      "official": "República de Guatemala"
+    },
+    "capital": [
+      "Guatemala City"
+    ],
+    "borders": [
+      "BLZ",
+      "SLV",
+      "HND",
+      "MEX"
+    ],
+    "area": 108889,
+    "population": 16858333,
+    "gini": 48.3,
+    "timezones": [
+      "UTC-06:00"
+    ],
+    "creador": "Eugenia Luna"
+  },
+  {
+    "name": {
+      "official": "República de Panamá"
+    },
+    "capital": [
+      "Panama City"
+    ],
+    "borders": [
+      "COL",
+      "CRI"
+    ],
+    "area": 75417,
+    "population": 4314768,
+    "gini": 49.8,
+    "timezones": [
+      "UTC-05:00"
+    ],
+    "creador": "Eugenia Luna"
+  }
+]

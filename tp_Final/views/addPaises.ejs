@@ -1,0 +1,72 @@
+<!--NODO_C3-SP5_TP1/src/views/addPaises.ejs-->
+<body>
+
+    <h1>Agregar País</h1>
+
+    <!-- 
+        Formulario para agregar un nuevo país al sistema.
+        - action: indica la ruta del servidor que procesará la petición POST.
+        - method: POST, para enviar datos al backend.
+    -->
+    <form class="add" action="/api/paises/agregar" method="POST">
+        <div>
+
+            <!-- NOMBRE OFICIAL -->
+            <label for="nombre">Nombre Oficial:</label><br>
+           <input type="text" id="nombre" name="name[official]" >
+            <br><br>
+
+            <!-- CAPITAL -->
+            <label for="capital">Capital (si hay más de una, separar por coma):</label><br>
+            <input type="text" id="capital" name="capital">
+            <br><br>
+
+            <!-- FRONTERAS -->
+            <label for="borders">Fronteras (códigos de 3 letras, separados por coma):</label><br>
+            <input type="text" id="borders" name="borders">
+            <br><br>
+
+            <!-- ÁREA -->
+            <label for="area">Área (km²):</label><br>
+            <input type="number" id="area" name="area" step="0.01">
+            <br><br>
+
+            <!-- POBLACIÓN -->
+            <label for="population">Población:</label><br>
+            <input type="number" id="population" name="population">
+            <br><br>
+
+            <!-- GINI -->
+            <label for="gini">Índice Gini (0 - 100):</label><br>
+            <input type="number" id="gini" name="gini" step="0.01">
+            <br><br>
+
+            <!-- TIMEZONES -->
+            <label for="timezones">Zonas Horarias:</label><br>
+            <select id="timezones" name="timezones[]" multiple size="8">
+            <option value="UTC-08:00">UTC-08:00</option>
+            <option value="UTC-07:00">UTC-07:00</option>
+            <option value="UTC-06:00">UTC-06:00</option>
+            <option value="UTC-05:00">UTC-05:00</option>
+            <option value="UTC-04:30">UTC-04:30</option>
+            <option value="UTC-04:00">UTC-04:00</option>
+            <option value="UTC-03:30">UTC-03:30</option>
+            <option value="UTC-03:00">UTC-03:00</option>
+            <option value="UTC-02:00">UTC-02:00</option>
+            </select>
+            <br><br>
+
+
+            <!-- Campo visible pero no editable -->
+            <label for="creador">Creador:</label>
+            <input type="text" id="creador" name="creador" value="Eugenia Luna" readonly>
+            <br><br>
+
+            <!-- BOTÓN GUARDAR -->
+            <button type="submit">Guardar País</button>
+
+            
+        </div>
+    </form>
+
+</body>
