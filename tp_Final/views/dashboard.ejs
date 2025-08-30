@@ -78,7 +78,7 @@
 
                             <!-- Formulario para eliminar, usando method-override para simular DELETE -->
                             <form action="/api/paises/<%= pais._id %>?_method=DELETE" method="POST" style="display:inline;">
-                                <button type="submit" onclick="return confirm('¿Estás seguro que quiere eliminar este pais?')">Eliminar</button>
+                                <button type="submit" onclick="return confirm('¿Estás seguro que quiere eliminar a <%= pais.name.official%> ?')">Eliminar</button>
                             </form>
                         </div>
                     </td>
