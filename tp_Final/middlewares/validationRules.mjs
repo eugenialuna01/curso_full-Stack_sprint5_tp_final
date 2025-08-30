@@ -74,16 +74,3 @@ export const registerValidationRules = () => [
   //   .exists().withMessage("El campo creador es obligatorio")
   //   .isLength({ min: 3 }).withMessage("El creador debe tener al menos 3 caracteres"),
 ];
-
-// Middleware para manejar errores de validación
-export const validateCountry = (req, res, next) => {
-  const errors = validationResult(req);
-  if (!errors.isEmpty()) {
-    return res.status(400).json({
-      status: "error",
-      message: "Validation failed",
-      errors: errors.array().map(err => ({ message: err.msg }))
-    });
-  }
-  next();
-};
