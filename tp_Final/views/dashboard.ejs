@@ -32,8 +32,8 @@
                     
                    
                    <!-- Capital: si es un array, unir con coma; si no hay capital, mostrar 'N/A' -->
-                    <td><% if (pais.capital && pais.capital.length > 0) { %>
-                            <ul>
+                    <td ><% if (pais.capital && pais.capital.length > 0) { %>
+                            <ul class="capital">
                                 <% pais.capital.forEach(capital => { %>
                                     <li><%= capital %></li>
                                 <% }) %>
@@ -87,9 +87,6 @@
         </tbody>
     </table>
 
-    <!-- Script para: 
-         1. Mostrar en consola cuántos países se cargaron.
-         2. Ocultar el mensaje de éxito automáticamente después de 3 segundos. -->
     <script>
         
         const mensaje = document.getElementById('mensajeExito');

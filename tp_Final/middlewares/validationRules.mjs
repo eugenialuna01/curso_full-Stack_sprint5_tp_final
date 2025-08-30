@@ -1,20 +1,6 @@
 
 import { body, validationResult } from "express-validator";
 
-// Middleware para normalizar campos tipo array
-export const normalizeArrays = (req, res, next) => {
-  ["capital", "borders", "timezones"].forEach(field => {
-    if (req.body[field] && typeof req.body[field] === "string") {
-      req.body[field] = req.body[field]
-        .split(",")
-        .map(el => el.trim())
-        .filter(el => el.length > 0);
-    }
-  });
-  next();
-};
-
-// Reglas de validación
 export const registerValidationRules = () => [
   // Nombre oficial
   body("name[official]")
