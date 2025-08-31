@@ -34,7 +34,7 @@ export async function renderizarFormularioEdicionController(req, res) {
       return res.status(404).send({ mensaje: 'País no encontrado' });
     }
 
-    res.render('editPaises', {title: 'Editar país', pais },); // Esto es lo que carga el archivo EJS
+    res.render('editPaises', {title: 'Editar país', pais },); 
   } catch (error) {
     res.status(500).send({
       mensaje: 'Error al cargar el formulario de edición',
@@ -84,7 +84,7 @@ export async function actualizarPaisController(req, res) {
 
 //*************************************************************************************************************** */
 export function mostrarFormularioAgregarPais(req, res) {
-    res.render('addPaises', { title: 'Agregar País' });
+    res.render('addPaises', { title: 'Agregar País',errors: [], oldData: {}  });
 }
 
 //*************************************************************************************************************** */
