@@ -11,13 +11,13 @@ import {
 export const obtenerTodosLosPaisesController = async (req, res) => {
   try {
     
-    const paises = await obtenerTodosLosPaises(); // Llama al servicio que trae los paises
+    const paises = await obtenerTodosLosPaises(); 
     const successMessage = req.session.successMessage;
     delete req.session.successMessage;
     res.render('dashboard', 
           {title: 'Dashboard de Países', 
           paises, 
-          successMessage}); // Renderiza la vista con los datos
+          successMessage}); 
   } catch (error) {
     console.error('Error al obtener países:', error);
     res.status(500).send('Error interno del servidor');
@@ -34,7 +34,7 @@ export async function renderizarFormularioEdicionController(req, res) {
       return res.status(404).send({ mensaje: 'País no encontrado' });
     }
 
-    res.render('editPaises', {title: 'Editar país', pais },); 
+    res.render('editPaises', {title: 'Editar país', pais },); // Esto es lo que carga el archivo EJS
   } catch (error) {
     res.status(500).send({
       mensaje: 'Error al cargar el formulario de edición',
@@ -84,7 +84,7 @@ export async function actualizarPaisController(req, res) {
 
 //*************************************************************************************************************** */
 export function mostrarFormularioAgregarPais(req, res) {
-    res.render('addPaises', { title: 'Agregar País',errors: [], oldData: {}  });
+    res.render('addPaises', { title: 'Agregar País'});
 }
 
 //*************************************************************************************************************** */
